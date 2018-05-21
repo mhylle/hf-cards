@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "json-server": "json-server --watch db.json",
-    "build.prod": "ng build --aot --prod --progress false --base-href \"https://mhylle.github.io/hf-cards/\""
+    "build.prod": "ng build --aot --prod --progress false --base-href \"https://mhylle.github.io/\""
   },
   "private": true,
   "dependencies": {
