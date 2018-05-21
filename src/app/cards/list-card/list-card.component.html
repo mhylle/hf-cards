@@ -1,4 +1,7 @@
-<div *ngFor="let card of cards" (click)="gotoCard(card.id)">
+<mat-grid-list cols="{{letters.length}}">
+  <mat-grid-tile *ngFor="let letter of letters" (click)="doFilter(letter)" class="filterLetters">{{letter}}</mat-grid-tile>
+</mat-grid-list>
+<div *ngFor="let card of shownCards" (click)="gotoCard(card.id)">
   <mat-card>
     <mat-card-content>
       <mat-grid-list [cols]="12" rowHeight="24px">

@@ -76,6 +76,13 @@
         }
       ],
       "id": 5
+    },
+    {
+      "firstname": "Bente",
+      "lastname": "Hansen",
+      "phone": "13214564",
+      "details": [],
+      "id": 6
     }
   ]
 }
