@@ -1,0 +1,43 @@
+{
+  "cards": [
+    {
+      "firstname": "Martin",
+      "lastname": "Hylleberg",
+      "phone": "61791394",
+      "email": "mhylle@yahoo.com",
+      "details": [
+        {
+          "date": "2018-05-21T10:19:20.209Z",
+          "description": "List tynd i toppen"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "firstname": "Kirsten",
+      "lastname": "Christensen",
+      "phone": "28105112",
+      "email": "kirsten_christensen64@hotmail.com",
+      "details": [
+        {
+          "date": "2018-05-21T10:35:51.306Z",
+          "description": "Det er mig der arbejder her"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "firstname": "Bent",
+      "lastname": "Bentsen",
+      "phone": "78978978",
+      "email": "fjgjhhdh@hotmail.com",
+      "details": [
+        {
+          "date": "2018-05-21T11:19:39.907Z",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

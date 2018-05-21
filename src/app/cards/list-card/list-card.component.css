@@ -1,0 +1,14 @@
+.firstColumn {
+  text-align: left;
+  background-color: cyan;
+}
+.column-small {
+  text-align: left;
+  background-color: red;
+}
+
+.column{
+  width: 100%;
+  text-align: left;
+
+}

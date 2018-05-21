@@ -1,0 +1,23 @@
+<div *ngIf="card$ | async as card">
+  <div class="column">
+    <div>Fornavn</div>
+    <div><input type="text" [(ngModel)]="card.firstname" name="firstname" placeholder="fornavn"></div>
+  </div>
+  <div>
+    <div>Efternavn</div>
+    <div><input type="text" [(ngModel)]="card.lastname" name="lastname" placeholder="efternavn"></div>
+  </div>
+  <div>
+    <div>Telefon</div>
+    <div><input type="text" [(ngModel)]="card.phone" name="phone" placeholder="telefon"></div>
+  </div>
+  <div>
+    <div>Email</div>
+    <div><input type="text" [(ngModel)]="card.email" name="email" placeholder="email"></div>
+  </div>
+  <div>
+    <div>Detaljer</div>
+    <div>details</div>
+  </div>
+  <div><button (click)="save()">Gem</button></div>
+</div>

@@ -1,0 +1,28 @@
+<div *ngFor="let card of cards" (click)="gotoCard(card.id)">
+  <mat-card>
+    <mat-card-content>
+      <mat-grid-list [cols]="12" rowHeight="24px">
+        <mat-grid-tile [colspan]="2">
+          <div class="column">{{card.firstname}} {{card.lastname}}</div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="column">{{card.phone}}</div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="3">
+          <div class="column">{{card.email}}</div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="4" [rowspan]="2">
+          <div class="column">
+            <div *ngFor="let cardDetail of card.details; let first= first">
+              <div *ngIf="first">
+                {{cardDetail.description}}
+              </div>
+            </div>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile><a routerLink="/edit-card/{{card.id}}">Ret</a></mat-grid-tile>
+        <mat-grid-tile><a routerLink="/add-detail/{{card.id}}">Tilføj</a></mat-grid-tile>
+      </mat-grid-list>
+    </mat-card-content>
+  </mat-card>
+</div>

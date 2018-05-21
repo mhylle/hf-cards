@@ -1,0 +1,15 @@
+<div>
+  Fornavn
+  <input type="text" [(ngModel)]="newCard.firstname" name="firstname" placeholder="fornavn">
+</div>
+<div>
+  Efternavn
+  <input type="text" [(ngModel)]="newCard.lastname" name="lastname" placeholder="efternavn"></div>
+<div>Telefon
+  <input type="text" [(ngModel)]="newCard.phone" name="phone" placeholder="telefon"></div>
+<div>Email
+  <input type="text" [(ngModel)]="newCard.email" name="email" placeholder="email"></div>
+<div>Detaljer
+  <input type="text" [(ngModel)]="cardDetail" name="details" placeholder="detaljer"></div>
+
+<button (click)="save()">Gem</button>

@@ -1,0 +1,23 @@
+<div *ngIf="card$ | async as card">
+  <div class="column">
+    <div>Fornavn</div>
+    <div>{{card.firstname}}</div>
+  </div>
+  <div>
+    <div>Efternavn</div>
+    <div>{{card.lastname}}</div>
+  </div>
+  <div>
+    <div>Telefon</div>
+    <div>{{card.phone}}</div>
+  </div>
+  <div>
+    <div>Email</div>
+    <div>{{card.email}}</div>
+  </div>
+  <div>
+    <div>Detaljer</div>
+    <div>details</div>
+  </div>
+
+</div>
