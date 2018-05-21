@@ -4,7 +4,15 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3000'
+  apiUrl: 'http://localhost:3000',
+  firebase: {
+    apiKey: "AIzaSyDNAayybxnuFanLsPWUgmDnQR8oaqXY6Rg",
+    authDomain: "hf-cards.firebaseapp.com",
+    databaseURL: "https://hf-cards.firebaseio.com",
+    projectId: "hf-cards",
+    storageBucket: "hf-cards.appspot.com",
+    messagingSenderId: "596502447854"
+  }
 };
 
 /*

@@ -1,8 +1,11 @@
 import {Injectable} from '@angular/core';
 import {Card} from "../Card";
-import {Observable} from "rxjs/internal/Observable";
+import {Observable} from 'rxjs';
+import {map} from 'rxjs/operators';
+
 import {HttpClient} from "@angular/common/http";
 import {environment} from "../../../environments/environment";
+import {AngularFireDatabase} from "angularfire2/database";
 
 const API_URL = environment.apiUrl;
 
@@ -25,5 +28,9 @@ export class CardService {
 
   getCard(id: string) : Observable<Card>{
     return this.http.get<Card>(API_URL + '/cards/' + id);
+  }
+
+  updateCard(card: Card) {
+    return this.http.put<Card>(API_URL + '/cards/' + card.id, card);
   }
 }

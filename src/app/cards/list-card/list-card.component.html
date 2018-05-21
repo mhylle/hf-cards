@@ -11,7 +11,7 @@
         <mat-grid-tile [colspan]="3">
           <div class="column">{{card.email}}</div>
         </mat-grid-tile>
-        <mat-grid-tile [colspan]="4" [rowspan]="2">
+        <mat-grid-tile [colspan]="5" [rowspan]="2">
           <div class="column">
             <div *ngFor="let cardDetail of card.details; let first= first">
               <div *ngIf="first">
@@ -21,7 +21,6 @@
           </div>
         </mat-grid-tile>
         <mat-grid-tile><a routerLink="/edit-card/{{card.id}}">Ret</a></mat-grid-tile>
-        <mat-grid-tile><a routerLink="/add-detail/{{card.id}}">Tilføj</a></mat-grid-tile>
       </mat-grid-list>
     </mat-card-content>
   </mat-card>

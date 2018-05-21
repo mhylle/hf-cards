@@ -19,11 +19,7 @@ export class CreateCardComponent implements OnInit {
 
   save() {
     console.log('Firstname: ' + this.newCard.firstname);
-    let cardDetails = new CardDetails();
-    cardDetails.date = new Date();
-    cardDetails.description = this.cardDetail;
     this.newCard.details = [];
-    this.newCard.details.push(cardDetails);
     this.cardService.createCard(this.newCard).subscribe(value => {
         if (value != null) {
           this.newCard = new Card();

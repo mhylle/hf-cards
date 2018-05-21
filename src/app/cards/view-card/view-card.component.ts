@@ -5,6 +5,7 @@ import {CardService} from "../services/card.service";
 import {Card} from "../Card";
 import {Observable} from "rxjs/internal/Observable";
 import {slideInDownAnimation} from '../../animations';
+import {CardDetails} from "../CardDetails";
 
 
 
@@ -27,5 +28,10 @@ export class ViewCardComponent implements OnInit {
     this.card$ = this.route.paramMap.pipe(
       switchMap((params: ParamMap) => this.cardService.getCard(params.get('id')))
     )
+  }
+
+  addDetail() {
+
+
   }
 }

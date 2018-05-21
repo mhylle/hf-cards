@@ -1,0 +1,17 @@
+.hf-card {
+  max-width: 300px;
+}
+
+.hf-header {
+  max-height: 24px;
+  border-bottom: lightblue 1px solid;
+  margin-bottom: 2px;
+  padding-bottom: 2px;
+}
+.hf-content {
+  padding-top: 8px;
+}
+
+.hf-actions {
+  text-align: right;
+}

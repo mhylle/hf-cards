@@ -1,15 +1,34 @@
-<div>
-  Fornavn
-  <input type="text" [(ngModel)]="newCard.firstname" name="firstname" placeholder="fornavn">
-</div>
-<div>
-  Efternavn
-  <input type="text" [(ngModel)]="newCard.lastname" name="lastname" placeholder="efternavn"></div>
-<div>Telefon
-  <input type="text" [(ngModel)]="newCard.phone" name="phone" placeholder="telefon"></div>
-<div>Email
-  <input type="text" [(ngModel)]="newCard.email" name="email" placeholder="email"></div>
-<div>Detaljer
-  <input type="text" [(ngModel)]="cardDetail" name="details" placeholder="detaljer"></div>
-
-<button (click)="save()">Gem</button>
+<mat-card class="hf-card">
+  <mat-card-header class="hf-header">
+    <mat-card-title>Opret ny kunde</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="hf-content">
+    <div>
+      <div>Fornavn</div>
+      <div>
+        <input type="text" [(ngModel)]="newCard.firstname" name="firstname" placeholder="fornavn">
+      </div>
+    </div>
+    <div>
+      <div>Efternavn</div>
+      <div>
+        <input type="text" [(ngModel)]="newCard.lastname" name="lastname" placeholder="efternavn">
+      </div>
+    </div>
+    <div>
+      <div>Telefon</div>
+      <div>
+        <input type="text" [(ngModel)]="newCard.phone" name="phone" placeholder="telefon">
+      </div>
+    </div>
+    <div>
+      <div>Email</div>
+      <div>
+        <input type="text" [(ngModel)]="newCard.email" name="email" placeholder="email">
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions class="hf-actions">
+    <button (click)="save()">Gem</button>
+  </mat-card-actions>
+</mat-card>

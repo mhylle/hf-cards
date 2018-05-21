@@ -13,6 +13,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import {MatCardModule, MatGridListModule} from "@angular/material";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {CreateDetailComponent} from "./cards/create-detail/create-detail.component";
 
 const appRoutes: Routes = [
   {path: 'create-card', component: CreateCardComponent},
@@ -32,6 +33,7 @@ const appRoutes: Routes = [
     ViewCardComponent,
     ListCardComponent,
     EditCardComponent,
+    CreateDetailComponent,
     LoginComponent,
     PageNotFoundComponent
   ],

@@ -1,23 +1,16 @@
-<div *ngIf="card$ | async as card">
-  <div class="column">
-    <div>Fornavn</div>
-    <div>{{card.firstname}}</div>
-  </div>
-  <div>
-    <div>Efternavn</div>
-    <div>{{card.lastname}}</div>
-  </div>
-  <div>
-    <div>Telefon</div>
-    <div>{{card.phone}}</div>
-  </div>
-  <div>
-    <div>Email</div>
-    <div>{{card.email}}</div>
-  </div>
-  <div>
-    <div>Detaljer</div>
-    <div>details</div>
-  </div>
-
-</div>
+<mat-card *ngIf="card$ | async as card">
+  <mat-card-header>
+    <mat-card-title>{{card.firstname}} {{card.lastname}}</mat-card-title>
+    <mat-card-subtitle>{{card.phone}}</mat-card-subtitle>
+    <mat-card-subtitle>{{card.email}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div *ngFor="let detail of card.details">
+      {{detail.date | date:'dd MMMM y'}}
+      {{detail.description}}
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <app-create-detail [card]="card"></app-create-detail>
+  </mat-card-actions>
+</mat-card>
