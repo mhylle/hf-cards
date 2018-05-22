@@ -14,5 +14,9 @@
 }
 
 .filterLetters {
-  font-size: 2em;
+  font-size: 2.5em;
+}
+
+.list-item {
+  font-size: 1.2em;
 }

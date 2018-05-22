@@ -1,11 +1,11 @@
 <mat-card *ngIf="card$ | async as card">
-  <mat-card-header>
-    <mat-card-title>{{card.firstname}} {{card.lastname}}</mat-card-title>
-    <mat-card-subtitle>{{card.phone}}</mat-card-subtitle>
-    <mat-card-subtitle>{{card.email}}</mat-card-subtitle>
+  <mat-card-header >
+    <mat-card-title class="card-header">{{card.firstname}} {{card.lastname}}</mat-card-title>
+    <mat-card-subtitle class="card-sub-header">{{card.phone}}</mat-card-subtitle>
+    <mat-card-subtitle class="card-sub-header">{{card.email}}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <div *ngFor="let detail of card.details">
+    <div *ngFor="let detail of card.details" class="card-content">
       {{detail.date | date:'dd MMMM y'}}
       {{detail.description}}
     </div>

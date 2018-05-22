@@ -26,6 +26,10 @@
         {
           "description": "Og nu er jeg ude at gå en tur",
           "date": "2018-05-21T20:27:13.027Z"
+        },
+        {
+          "description": "Og nu står jeg og ser på appen",
+          "date": "2018-05-22T05:57:45.315Z"
         }
       ],
       "id": 2
@@ -81,8 +85,26 @@
       "firstname": "Bente",
       "lastname": "Hansen",
       "phone": "13214564",
-      "details": [],
+      "details": [
+        {
+          "description": "Dette er en test af description view",
+          "date": "2018-05-22T20:09:40.847Z"
+        },
+        {
+          "description": "Her kommer så lige endnu en description ting, som gerne skulle være lidt større.",
+          "date": "2018-05-22T20:10:01.361Z"
+        },
+        {
+          "description": "Endnu mere tekst, som er så meget at jeg har været nødt til a kopiere det nogle gange..Endnu mere tekst, som er så meget at jeg har været nødt til a kopiere det nogle gange..Endnu mere tekst, som er så meget at jeg har været nødt til a kopiere det nogle gange..",
+          "date": "2018-05-22T20:10:27.601Z"
+        }
+      ],
       "id": 6
+    },
+    {
+      "firstname": "EtNAvn",
+      "details": [],
+      "id": 7
     }
   ]
 }

@@ -1,9 +1,9 @@
-<mat-grid-list cols="{{letters.length}}">
+<mat-grid-list cols="{{letters.length}}" class="mat-header-cell">
   <mat-grid-tile *ngFor="let letter of letters" (click)="doFilter(letter)" class="filterLetters">{{letter}}</mat-grid-tile>
 </mat-grid-list>
-<div *ngFor="let card of shownCards" (click)="gotoCard(card.id)">
+<div *ngFor="let card of shownCards" (click)="gotoCard(card.id)" >
   <mat-card>
-    <mat-card-content>
+    <mat-card-content class="list-item">
       <mat-grid-list [cols]="12" rowHeight="24px">
         <mat-grid-tile [colspan]="2">
           <div class="column">{{card.firstname}} {{card.lastname}}</div>

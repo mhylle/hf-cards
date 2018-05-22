@@ -1,3 +1,8 @@
-<span><a routerLink="create-card">Opret</a></span>&nbsp;
-<span><a routerLink="list-card">Kartotek</a></span>
-<router-outlet></router-outlet>
+<mat-toolbar color="primary" class="fixed-header">
+  <mat-toolbar-row>
+    <a mat-button routerLink="create-card">Opret</a>
+    <a mat-button routerLink="list-card">Kartotek</a>
+  </mat-toolbar-row>
+</mat-toolbar>
+<!--<app-login></app-login>-->
+<router-outlet style="margin-top: 80px;"></router-outlet>

@@ -14,6 +14,7 @@ import {FormsModule} from "@angular/forms";
 import {MatCardModule, MatGridListModule} from "@angular/material";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {CreateDetailComponent} from "./cards/create-detail/create-detail.component";
+import {MyMaterialModule} from "./material.module";
 
 const appRoutes: Routes = [
   {path: 'create-card', component: CreateCardComponent},
@@ -45,8 +46,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    MatGridListModule,
-    MatCardModule,
+    MyMaterialModule,
     BrowserAnimationsModule
   ],
   providers: [],
